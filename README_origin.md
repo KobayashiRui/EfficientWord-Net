@@ -1,16 +1,13 @@
-# このフォークの目的
-+ 元のレポジトリから最新バージョンのpythonへの対応。
-+ 説明文などの日本語対応
-+ 日本語によるHotwordの検証
-+ セットアップ方法などの更新
-
 # EfficientWord-Net: Hotword Detection Based on Few-Shot Learning
-ホームアシスタントは、アクティブ化するために「ホットワード」と呼ばれる特別なフレーズを必要とします（例：「OK Google」）。EfficientWord-Netは、少数ショット学習に基づいたホットワード検出エンジンで、開発者がプログラムにカスタムホットワードを追加することを可能にします。ライブラリは完全にPythonで書かれており、GoogleのTFLite実装を使用して、リアルタイム推論を高速化します。これはFaceNetのSiamese Network Architectureに触発されており、ユーザーから直接収集された3〜4のホットワードサンプルがあると最も効果的に機能します。
 
-### EfficientWord-Netをラズベリーパイで使用した例
+Home assistants require special phrases called hotwords to get activated (e.g., "OK Google"). EfficientWord-Net is a hotword detection engine based on few-shot learning that allows developers to add custom hotwords to their programs without extra charges. The library is purely written in Python and uses Google's TFLite implementation for faster real-time inference. It is inspired by FaceNet's Siamese Network Architecture and performs best when 3-4 hotword samples are collected directly from the user.
+
+
+### Demo of EfficientWord-Net on Pi
+
 https://user-images.githubusercontent.com/44740048/139785995-3330d65a-cfe1-4e92-8769-ee389a122acc.mp4
 
-## トレーニングファイルへのアクセス
+## Access Training File
 [Training File](./training.ipynb) to access the training file.
 
 ## Datasets
@@ -49,38 +46,6 @@ To import the package:
 ```python
 import eff_word_net
 ```
-
-## クローンをして実行する方法
-### レポジトリをクローン
-```
-git clone https://github.com/KobayashiRui/EfficientWord-Net.git
-```
-
-### venvによる仮想環境を設定
-```
-python -m vevn venv
-```
-### venvの有効化
-Linux or Mac
-```
-. venv/bin/activate
-```
-
-Windows
-```
-.\venv\Scripts\activate
-```
-
-### setuptoolsのインストール
-```
-pip install setuptools
-```
-
-### パッケージのインストール
-```
-pip install .
-```
-
 
 ## Demo
 After installing the packages, you can run the demo script built into the library (ensure you have a working microphone).
