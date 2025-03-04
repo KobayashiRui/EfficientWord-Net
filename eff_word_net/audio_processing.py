@@ -1,11 +1,16 @@
 import glob
-import tflite_runtime.interpreter as tflite
 import os
 import numpy as np
 import random
 from pprint import pprint
 import json
 import onnxruntime as rt
+
+import sys
+if sys.platform.startswith('linux'):
+    import tflite_runtime.interpreter as tflite
+else:
+    from tensorflow import lite as tflite
 
 from eff_word_net.audio_utils import logfbank
 
