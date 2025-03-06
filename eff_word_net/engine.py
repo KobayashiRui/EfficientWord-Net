@@ -358,7 +358,7 @@ if __name__ == "__main__" :
     
     
     lights_off = HotwordDetector(
-        hotword="lights_on",
+        hotword="lights_off",
         model = base_model,
         reference_file=os.path.join(samples_loc,"lights_off_ref.json"),
         threshold=0.7,

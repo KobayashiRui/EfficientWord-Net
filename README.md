@@ -92,9 +92,10 @@ Command to run the demo:
 python -m eff_word_net.engine
 ```
 
-## Generating Custom Wakewords
-For any new hotword, the library needs information about the hotword. This information is obtained from a file called `{wakeword}_ref.json`. 
-For example, for the wakeword 'alexa', the library would need the file called `alexa_ref.json`.
+## カスタムウェイクワードの作成
+新しいホットワードを追加する場合、ライブラリはそのホットワードに関する情報を必要とします。
+この情報は、{wakeword}_ref.json というファイルから取得されます。
+例えば、ウェイクワードが "alexa" の場合、ライブラリは alexa_ref.json というファイルを必要とします。
 
 These files can be generated with the following procedure:
 
